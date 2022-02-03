@@ -28,7 +28,8 @@
   --bs-gray-800: #3e4265;
   --bs-gray-900: #131022;
   --darkness: #1f1f1f;
-  --bs-primary: #e0b23b;
+  --bs-primary: #ed7d31;
+  --hovered: #c56728;
   --bs-secondary: #eff2fc;
   --bs-success: #22c55e;
   --bs-info: #4c82f7;
@@ -231,7 +232,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #3e41ee;
+  color: var(--hovered);
   text-decoration: none;
 }
 a:not([href]):not([class]),
@@ -3238,7 +3239,7 @@ fieldset:disabled .btn {
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #3e41ee;
+  color: var(--hovered);
   text-decoration: none;
 }
 .btn-link:focus {

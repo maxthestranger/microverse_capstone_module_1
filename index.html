@@ -392,7 +392,7 @@
               class="card flex-column flex-sm-row flex-md-column flex-xxl-row align-items-center card-hover border-primary h-100"
             >
               <img
-                src="assets/img/landing/medical/icons/doctor.svg"
+                src="assets/img/landing/medical/icons/sample.svg"
                 width="168"
                 alt="Doctor icon"
               />
@@ -403,7 +403,7 @@
                   Sample Packs
                 </h3>
                 <p class="fs-sm mb-1">
-                  Search the right doctor by location and specialty.
+                  Lookiing for the sounds behind some of the greatest hits?
                 </p>
                 <a href="#" class="btn btn-link stretched-link px-0">
                   See all doctors
@@ -419,7 +419,7 @@
               class="card flex-column flex-sm-row flex-md-column flex-xxl-row align-items-center card-hover border-primary h-100"
             >
               <img
-                src="assets/img/landing/medical/icons/ambulance.svg"
+                src="assets/img/landing/medical/icons/beat.svg"
                 width="168"
                 alt="Ambulance icon"
               />
@@ -427,11 +427,8 @@
                 class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2"
               >
                 <h3 class="h5 mb-3 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">Beats</h3>
-                <p
-                  class="d-flex align-items-center text-nav fs-xl fw-medium mb-2"
-                >
-                  <i class="bx bx-phone-call fs-4 text-muted me-1"></i>
-                  (406) 555-0120
+                <p class="fs-sm mb-1">
+                  Purchase your tracks today. Fresh tracks from the kitchen
                 </p>
                 <a href="#" class="btn btn-link stretched-link px-0">
                   Contact us
@@ -447,7 +444,7 @@
               class="card flex-column flex-sm-row flex-md-column flex-xxl-row align-items-center card-hover border-primary h-100"
             >
               <img
-                src="assets/img/landing/medical/icons/virus.svg"
+                src="assets/img/landing/medical/icons/merch.svg"
                 width="168"
                 alt="Virus icon"
               />
@@ -458,7 +455,7 @@
                   Mercherdise
                 </h3>
                 <p class="fs-sm mb-1">
-                  We offer quick COVID-19 testing by appointment.
+                  Check what's available on the merch shop today
                 </p>
                 <a href="#" class="btn btn-link stretched-link px-0">
                   Learn more
@@ -659,133 +656,384 @@
         </div>
       </section>
 
-      <!-- CTA carousel -->
-      <section class="pb-5 mb-2 mb-md-4 mb-lg-5" style="padding-top: 80px">
-        <div class="bg-secondary pb-lg-4 pb-xl-5">
-          <div class="container pb-4 pb-md-5">
-            <div class="row">
-              <div class="col-xl-5 col-lg-6" style="margin-top: -80px">
-                <!-- Swiper tabs -->
-                <div class="swiper-tabs mx-auto" style="max-width: 526px">
-                  <div id="image-1" class="swiper-tab active">
-                    <img
-                      src="assets/img/landing/medical/kali.jpg"
-                      class="rounded-3"
-                      alt="Image"
-                    />
-                  </div>
-                  <div id="image-2" class="swiper-tab">
-                    <img
-                      src="assets/img/landing/medical/nadia.jpg"
-                      class="rounded-3"
-                      alt="Image"
-                    />
-                  </div>
-                  <div id="image-3" class="swiper-tab">
-                    <img
-                      src="assets/img/landing/medical/masauti.jpg"
-                      class="rounded-3"
-                      alt="Image"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-xl-5 col-lg-6 offset-xl-1 pt-2 pt-md-4 pt-lg-5 mt-4"
+      <!-- Testimonials -->
+      <section class="container py-5 mb-2 mt-md-2 mb-md-4 mt-lg-4 mb-lg-5">
+        <div class="row pt-xl-1 pb-xl-3">
+          <div class="col-lg-3 col-md-4">
+            <h2
+              class="text-center text-md-start mx-auto mx-md-0 pt-md-2"
+              style="max-width: 300px"
+            >
+              What Our Music<br class="d-none d-md-inline" />Clients Say
+              <br class="d-none d-md-inline" />About Us:
+            </h2>
+
+            <!-- Slider controls (Prev / next buttons) -->
+            <div
+              class="d-flex justify-content-center justify-content-md-start pb-4 mb-2 pt-2 pt-md-4 mt-md-5"
+            >
+              <button
+                type="button"
+                id="prev-testimonial"
+                class="btn btn-prev btn-icon btn-sm me-2"
               >
-                <!-- Slider prev/next buttons -->
-                <div
-                  class="d-flex justify-content-center justify-content-lg-start pb-3 mb-3"
-                >
-                  <button
-                    type="button"
-                    id="prev"
-                    class="btn btn-prev btn-icon btn-sm me-2"
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button
+                type="button"
+                id="next-testimonial"
+                class="btn btn-next btn-icon btn-sm ms-2"
+              >
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-8">
+            <div
+              class="swiper mx-n2"
+              data-swiper-options='{
+              "slidesPerView": 1,
+              "spaceBetween": 8,
+              "loop": true,
+              "navigation": {
+                "prevEl": "#prev-testimonial",
+                "nextEl": "#next-testimonial"
+              },
+              "breakpoints": {
+                "500": {
+                  "slidesPerView": 2
+                },
+                "1000": {
+                  "slidesPerView": 2
+                },
+                "1200": {
+                  "slidesPerView": 3
+                }
+              }
+            }'
+            >
+              <div class="swiper-wrapper">
+                <!-- Item -->
+                <div class="swiper-slide h-auto pt-4">
+                  <figure
+                    class="d-flex flex-column h-100 px-2 px-sm-0 mb-0 mx-2"
                   >
-                    <i class="bx bx-chevron-left"></i>
-                  </button>
-                  <button
-                    type="button"
-                    id="next"
-                    class="btn btn-next btn-icon btn-sm ms-2"
-                  >
-                    <i class="bx bx-chevron-right"></i>
-                  </button>
+                    <div
+                      class="card h-100 position-relative border-0 shadow-sm pt-4"
+                    >
+                      <span
+                        class="btn btn-icon btn-dark shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4"
+                      >
+                        <i class="bx bxs-quote-left"></i>
+                      </span>
+                      <blockquote class="card-body pb-3 mb-0">
+                        <p class="mb-0">
+                          Id mollis consectetur congue egestas egestas
+                          suspendisse blandit justo. Tellus augue commodo id
+                          quis tempus etiam pulvinar at maecenas.
+                        </p>
+                      </blockquote>
+                    </div>
+                    <figcaption class="d-flex align-items-center ps-4 pt-4">
+                      <img
+                        src="assets/img/avatar/kali.jpg"
+                        width="48"
+                        class="rounded-circle"
+                        alt="Fannie Summers"
+                      />
+                      <div class="ps-3">
+                        <h6 class="fs-sm fw-semibold mb-0">Kaligraph Jones</h6>
+                        <span class="fs-xs text-muted">Rapper</span>
+                      </div>
+                    </figcaption>
+                  </figure>
                 </div>
 
-                <!-- Swiper slider -->
-                <div
-                  class="swiper mx-0 mb-md-n2 mb-xxl-n3"
-                  data-swiper-options='{
-                  "spaceBetween": 30,
-                  "loop": true,
-                  "tabs": true,
-                  "navigation": {
-                    "prevEl": "#prev",
-                    "nextEl": "#next"
-                  }
-                }'
-                >
-                  <div class="swiper-wrapper text-center text-lg-start">
-                    <!-- Item -->
-                    <div class="swiper-slide pb-4" data-swiper-tab="#image-1">
-                      <h2 class="h1 mb-4">
-                        Kaligraph Jones -
-                        <span class="text-success">Kenya</span>
-                      </h2>
-                      <p class="pb-2 pb-xl-0 mb-4 mb-xl-5">
-                        Morbi lacus vulputate mauris ut et nunc, tempor.
-                        Placerat augue eu amet feugiat mi sagittis velit. Sed
-                        suscipit nunc suspendisse morbi pharetra libero
-                        consectetur. Proin eros sollicitudin augue tempus.
-                        Aliquet id sit donec aliquam.
-                      </p>
-                      <a href="#" class="btn btn-outline-success btn-sm"
-                        ><i class="bx bxl-instagram me-2"></i> @kaligraph</a
+                <!-- Item -->
+                <div class="swiper-slide h-auto pt-4">
+                  <figure
+                    class="d-flex flex-column h-100 px-2 px-sm-0 mb-0 mx-2"
+                  >
+                    <div
+                      class="card h-100 position-relative border-0 shadow-sm pt-4"
+                    >
+                      <span
+                        class="btn btn-icon btn-dark shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4"
                       >
+                        <i class="bx bxs-quote-left"></i>
+                      </span>
+                      <blockquote class="card-body pb-3 mb-0">
+                        <p class="mb-0">
+                          Phasellus luctus nisi id orci condimentum, at cursus
+                          nisl vestibulum. Orci varius natoque penatibus et
+                          magnis dis parturient montes commodo.
+                        </p>
+                      </blockquote>
                     </div>
+                    <figcaption class="d-flex align-items-center ps-4 pt-4">
+                      <img
+                        src="assets/img/avatar/masauti.jpg"
+                        width="48"
+                        class="rounded-circle"
+                        alt="Robert Fox"
+                      />
+                      <div class="ps-3">
+                        <h6 class="fs-sm fw-semibold mb-0">Masauti</h6>
+                        <span class="fs-xs text-muted">Singer</span>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
 
-                    <!-- Item -->
-                    <div class="swiper-slide pb-4" data-swiper-tab="#image-2">
-                      <h2 class="h1 mb-4">
-                        Nadia Mukami -
-                        <span class="text-danger">Kenya</span>
-                      </h2>
-                      <p class="pb-2 pb-xl-0 mb-4 mb-xl-5">
-                        Magna cursus feugiat sed sodales praesent vehicula
-                        integer arcu. Felis duis lectus felis, tempus aliquet
-                        quis non. At integer consectetur eget nunc, fames. Et
-                        facilisi vel, luctus sed interdum vitae nec, velit.
-                        Maecenas purus et pharetra, at volutpat aenean.
-                      </p>
-                      <a href="#" class="btn btn-outline-danger"
-                        ><i class="bx bxl-instagram me-2"></i> @nadia</a
+                <!-- Item -->
+                <div class="swiper-slide h-auto pt-4">
+                  <figure
+                    class="d-flex flex-column h-100 px-2 px-sm-0 mb-0 mx-2"
+                  >
+                    <div
+                      class="card h-100 position-relative border-0 shadow-sm pt-4"
+                    >
+                      <span
+                        class="btn btn-icon btn-dark shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4"
                       >
+                        <i class="bx bxs-quote-left"></i>
+                      </span>
+                      <blockquote class="card-body pb-3 mb-0">
+                        <p class="mb-0">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Mauris ipsum odio, bibendum ornare mi at,
+                          efficitur urna.
+                        </p>
+                      </blockquote>
                     </div>
-
-                    <!-- Item -->
-                    <div class="swiper-slide pb-4" data-swiper-tab="#image-3">
-                      <h2 class="h1 mb-4">
-                        Masauti -
-                        <span class="text-warning">Kenya</span>
-                      </h2>
-                      <p class="pb-2 pb-xl-0 mb-4 mb-xl-5">
-                        Magna cursus feugiat sed sodales praesent vehicula
-                        integer arcu. Felis duis lectus felis, tempus aliquet
-                        quis non. At integer consectetur eget nunc, fames. Et
-                        facilisi vel, luctus sed interdum vitae nec, velit.
-                        Maecenas purus et pharetra, at volutpat aenean.
-                      </p>
-                      <a href="#" class="btn btn-outline-warning"
-                        ><i class="bx bxl-instagram me-2"></i>
-                        @officialmasauti</a
-                      >
-                    </div>
-                  </div>
+                    <figcaption class="d-flex align-items-center ps-4 pt-4">
+                      <img
+                        src="assets/img/avatar/nadia.jpg"
+                        width="48"
+                        class="rounded-circle"
+                        alt="Annette Black"
+                      />
+                      <div class="ps-3">
+                        <h6 class="fs-sm fw-semibold mb-0">Nadia Mukami</h6>
+                        <span class="fs-xs text-muted">Singer</span>
+                      </div>
+                    </figcaption>
+                  </figure>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Brands (Carousel) -->
+      <section class="container pb-4 pb-lg-5 mb-3">
+        <div
+          class="d-flex align-items-center justify-content-md-between justify-content-center mb-md-4 mb-3"
+        >
+          <h2 class="mb-0">Brands</h2>
+
+          <!-- Slider prev/next buttons + Quotation mark -->
+          <div class="d-md-flex d-none ms-4">
+            <button
+              type="button"
+              id="prev-brand"
+              class="btn btn-prev btn-icon btn-sm me-2"
+            >
+              <i class="bx bx-chevron-left"></i>
+            </button>
+            <button
+              type="button"
+              id="next-brand"
+              class="btn btn-next btn-icon btn-sm ms-2"
+            >
+              <i class="bx bx-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="swiper mx-n2"
+          data-swiper-options='{
+          "slidesPerView": 2,
+          "navigation": {
+            "prevEl": "#prev-brand",
+            "nextEl": "#next-brand"
+          },
+          "loop": true,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 3,
+              "spaceBetween": 8
+            },
+            "650": {
+              "slidesPerView": 4,
+              "spaceBetween": 8
+            },
+            "900": {
+              "slidesPerView": 5,
+              "spaceBetween": 8
+            },
+            "1100": {
+              "slidesPerView": 6,
+              "spaceBetween": 8
+            }
+          }
+        }'
+        >
+          <div class="swiper-wrapper">
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="#" class="card card-body card-hover px-2 mx-2">
+                <img
+                  src="assets/img/brands/01.svg"
+                  class="d-block mx-auto my-2"
+                  width="154"
+                  alt="Brand"
+                />
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="#" class="card card-body card-hover px-2 mx-2">
+                <img
+                  src="assets/img/brands/02.svg"
+                  class="d-block mx-auto my-2"
+                  width="154"
+                  alt="Brand"
+                />
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="#" class="card card-body card-hover px-2 mx-2">
+                <img
+                  src="assets/img/brands/03.svg"
+                  class="d-block mx-auto my-2"
+                  width="154"
+                  alt="Brand"
+                />
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="#" class="card card-body card-hover px-2 mx-2">
+                <img
+                  src="assets/img/brands/04.svg"
+                  class="d-block mx-auto my-2"
+                  width="154"
+                  alt="Brand"
+                />
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="#" class="card card-body card-hover px-2 mx-2">
+                <img
+                  src="assets/img/brands/05.svg"
+                  class="d-block mx-auto my-2"
+                  width="154"
+                  alt="Brand"
+                />
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="#" class="card card-body card-hover px-2 mx-2">
+                <img
+                  src="assets/img/brands/06.svg"
+                  class="d-block mx-auto my-2"
+                  width="154"
+                  alt="Brand"
+                />
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="#" class="card card-body card-hover px-2 mx-2">
+                <img
+                  src="assets/img/brands/01.svg"
+                  class="d-block mx-auto my-2"
+                  width="154"
+                  alt="Brand"
+                />
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="#" class="card card-body card-hover px-2 mx-2">
+                <img
+                  src="assets/img/brands/02.svg"
+                  class="d-block mx-auto my-2"
+                  width="154"
+                  alt="Brand"
+                />
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="#" class="card card-body card-hover px-2 mx-2">
+                <img
+                  src="assets/img/brands/03.svg"
+                  class="d-block mx-auto my-2"
+                  width="154"
+                  alt="Brand"
+                />
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="#" class="card card-body card-hover px-2 mx-2">
+                <img
+                  src="assets/img/brands/04.svg"
+                  class="d-block mx-auto my-2"
+                  width="154"
+                  alt="Brand"
+                />
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="#" class="card card-body card-hover px-2 mx-2">
+                <img
+                  src="assets/img/brands/05.svg"
+                  class="d-block mx-auto my-2"
+                  width="154"
+                  alt="Brand"
+                />
+              </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="#" class="card card-body card-hover px-2 mx-2">
+                <img
+                  src="assets/img/brands/06.svg"
+                  class="d-block mx-auto my-2"
+                  width="154"
+                  alt="Brand"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Pagination (bullets) -->
+          <div
+            class="swiper-pagination position-relative pt-3 mt-4 d-md-none d-flex"
+          ></div>
         </div>
       </section>
 
@@ -1100,217 +1348,228 @@
         </div>
       </section>
 
-      <!-- Contacts -->
-      <section class="container pb-5 mb-1 mb-md-4 mb-lg-5">
-        <div class="row pb-xl-3">
-          <div class="col-md-6 pb-2 pb-md-0 mb-4 mb-md-0">
-            <div class="gallery rounded-3 shadow-sm">
-              <a
-                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17239.8060668495!2d-122.43668227971098!3d37.741526659411576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e1259a3ed73%3A0xaae7371cd8db1e38!2sNoe%20Valley%20Bakery!5e0!3m2!1sen!2sua!4v1637757959377!5m2!1sen!2sua"
-                data-iframe="true"
-                class="gallery-item rounded-3"
-                data-sub-html='<h6 class="fs-sm text-light">Noe Valley Bakery 24th Street, San Francisco, CA, USA</h6>'
+      <!-- Contact CTA -->
+      <section class="container mt-n2 mt-sm-0">
+        <div class="bg-secondary rounded-3 overflow-hidden">
+          <div class="row align-items-center">
+            <div class="col-xl-4 col-md-5 offset-lg-1">
+              <div
+                class="pt-5 pb-3 pb-md-5 px-4 px-lg-0 text-center text-md-start"
               >
-                <i
-                  class="bx bxs-map text-primary display-5 position-absolute top-50 start-50 translate-middle mb-0"
-                ></i>
-                <img src="assets/img/landing/medical/map.jpg" alt="Map cover" />
-                <div class="gallery-item-caption fs-sm fw-medium">
-                  Expand the map
-                </div>
-              </a>
+                <p class="lead mb-3">The Iconic hub</p>
+                <h2 class="h1 pb-3 pb-sm-4">
+                  Take Your <span class="text-primary">Production</span> to the
+                  Next Level
+                </h2>
+                <a
+                  href="/book"
+                  class="btn_motif purple"
+                  data-content="Work with us"
+                  >Work with us</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-7 offset-xl-1">
+              <div
+                class="position-relative d-flex flex-column align-items-center justify-content-center h-100"
+              >
+                <svg
+                  class="d-none d-md-block position-absolute top-50 start-0 translate-middle-y"
+                  width="868"
+                  height="868"
+                  style="min-width: 868px"
+                  viewBox="0 0 868 868"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    opacity="0.15"
+                    cx="434"
+                    cy="434"
+                    r="434"
+                    fill="#6366F1"
+                  />
+                </svg>
+                <img
+                  src="assets/img/about/cta.png"
+                  class="position-relative zindex-3 mb-2 my-lg-4"
+                  width="382"
+                  alt="Illustration"
+                />
+              </div>
             </div>
           </div>
-          <div class="col-xl-5 col-md-6 offset-xl-1">
-            <h2 class="h1 pb-4 mb-1 mb-lg-3">
-              Get Free Professional Consultation
-            </h2>
-            <ul class="list-unstyled pb-3 mb-0 mb-lg-3">
-              <li class="d-flex mb-3">
-                <i class="bx bx-map text-muted fs-xl mt-1 me-2"></i>
-                Noe Valley Bakery 24th Street, San Francisco, CA, USA
-              </li>
-              <li class="d-flex mb-3">
-                <i class="bx bx-phone-call text-muted fs-xl mt-1 me-2"></i>
-                (406) 555-0120
-              </li>
-              <li class="d-flex mb-3">
-                <i class="bx bx-time text-muted fs-xl mt-1 me-2"></i>
-                <div>
-                  <div>
-                    <span class="text-dark fw-semibold me-1">Mon – Fri:</span
-                    >9:00 am – 22:00 pm
-                  </div>
-                  <div>
-                    <span class="text-dark fw-semibold me-1">Sat – Sun:</span
-                    >9:00 am – 20:00 pm
-                  </div>
+        </div>
+      </section>
+
+      <!-- Social networks (Carousel on narrow screens) -->
+      <section class="container text-center py-5 my-2 my-md-4 my-lg-5">
+        <h2 class="h1 mb-4">Let's Connect</h2>
+        <p class="fs-lg text-muted pb-2 mb-5">
+          Follow us and keep up to date with the freshest music & offers!
+        </p>
+        <div
+          class="swiper"
+          data-swiper-options='{
+          "slidesPerView": 2,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 3
+            },
+            "650": {
+              "slidesPerView": 4
+            },
+            "900": {
+              "slidesPerView": 5
+            },
+            "1100": {
+              "slidesPerView": 6
+            }
+          }
+        }'
+        >
+          <div class="swiper-wrapper">
+            <!-- Item -->
+            <div class="swiper-slide">
+              <div class="position-relative text-center border-end mx-n1">
+                <a
+                  href="#"
+                  class="btn btn-icon btn-secondary btn-facebook btn-lg stretched-link"
+                >
+                  <i class="bx bxl-facebook"></i>
+                </a>
+                <div class="pt-4">
+                  <h6 class="mb-1">Facebook</h6>
+                  <p class="fs-sm text-muted mb-0">silicon</p>
                 </div>
-              </li>
-              <li class="d-flex mb-3">
-                <i class="bx bx-envelope text-muted fs-xl mt-1 me-2"></i>
-                example@email.com
-              </li>
-            </ul>
-            <a href="#" class="btn btn-primary shadow-primary btn-lg"
-              >Make an appointment</a
-            >
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+              <div class="position-relative text-center border-end mx-n1">
+                <a
+                  href="#"
+                  class="btn btn-icon btn-secondary btn-instagram btn-lg stretched-link"
+                >
+                  <i class="bx bxl-instagram"></i>
+                </a>
+                <div class="pt-4">
+                  <h6 class="mb-1">Instagram</h6>
+                  <p class="fs-sm text-muted mb-0">@silicon</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+              <div class="position-relative text-center border-end mx-n1">
+                <a
+                  href="#"
+                  class="btn btn-icon btn-secondary btn-twitter btn-lg stretched-link"
+                >
+                  <i class="bx bxl-twitter"></i>
+                </a>
+                <div class="pt-4">
+                  <h6 class="mb-1">Twitter</h6>
+                  <p class="fs-sm text-muted mb-0">@silicon</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+              <div class="position-relative text-center border-end mx-n1">
+                <a
+                  href="#"
+                  class="btn btn-icon btn-secondary btn-linkedin btn-lg stretched-link"
+                >
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+                <div class="pt-4">
+                  <h6 class="mb-1">LinkedIn</h6>
+                  <p class="fs-sm text-muted mb-0">Silicon Inc.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+              <div class="position-relative text-center border-end mx-n1">
+                <a
+                  href="#"
+                  class="btn btn-icon btn-secondary btn-youtube btn-lg stretched-link"
+                >
+                  <i class="bx bxl-youtube"></i>
+                </a>
+                <div class="pt-4">
+                  <h6 class="mb-1">YouTube</h6>
+                  <p class="fs-sm text-muted mb-0">Silicon</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+              <div class="position-relative text-center border-end mx-n1">
+                <a
+                  href="#"
+                  class="btn btn-icon btn-secondary btn-dribbble btn-lg stretched-link"
+                >
+                  <i class="bx bxl-dribbble"></i>
+                </a>
+                <div class="pt-4">
+                  <h6 class="mb-1">Dribbble</h6>
+                  <p class="fs-sm text-muted mb-0">Silicon</p>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Pagination (bullets) -->
+          <div
+            class="swiper-pagination position-relative bottom-0 pt-3 mt-4"
+          ></div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer bg-secondary pt-5 pb-4 pb-lg-5">
-      <div class="container pt-lg-4">
-        <div class="row pb-5">
-          <div class="col-lg-4 col-md-6">
-            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
-              <img src="assets/img/logo.svg" width="47" alt="Silicon" />
-              Silicon
-            </div>
-            <p class="fs-sm pb-lg-3 mb-4">
-              Proin ipsum pharetra, senectus eget scelerisque varius pretium
-              platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi
-              sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget
-              elementum dolor ullamcorper sodales ultrices eros.
-            </p>
-            <form class="needs-validation" novalidate>
-              <label for="subscr-email" class="form-label"
-                >Subscribe to our newsletter</label
-              >
-              <div class="input-group">
-                <input
-                  type="email"
-                  id="subscr-email"
-                  class="form-control rounded-start ps-5"
-                  placeholder="Your email"
-                  required
-                />
-                <i
-                  class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"
-                ></i>
-                <div class="invalid-tooltip position-absolute top-100 start-0">
-                  Please provide a valid email address.
-                </div>
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-              </div>
-            </form>
-          </div>
-          <div
-            class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0"
-          >
-            <div id="footer-links" class="row">
-              <div class="col-lg-4">
-                <h6 class="mb-2">
-                  <a
-                    href="#useful-links"
-                    class="d-block text-dark dropdown-toggle d-lg-none py-2"
-                    data-bs-toggle="collapse"
-                    >Useful Links</a
-                  >
-                </h6>
-                <div
-                  id="useful-links"
-                  class="collapse d-lg-block"
-                  data-bs-parent="#footer-links"
-                >
-                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >About</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >Services</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >Prices</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >News</a
-                      >
-                    </li>
-                  </ul>
-                  <ul class="nav flex-column mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >Terms &amp; Conditions</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >Privacy Policy</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-3">
-                <h6 class="mb-2">
-                  <a
-                    href="#social-links"
-                    class="d-block text-dark dropdown-toggle d-lg-none py-2"
-                    data-bs-toggle="collapse"
-                    >Socials</a
-                  >
-                </h6>
-                <div
-                  id="social-links"
-                  class="collapse d-lg-block"
-                  data-bs-parent="#footer-links"
-                >
-                  <ul class="nav flex-column mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >Facebook</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >LinkedIn</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >Twitter</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"
-                        >Instagram</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
-                <h6 class="mb-2">Contact Us</h6>
-                <a href="mailto:email@example.com" class="fw-medium"
-                  >email@example.com</a
-                >
-              </div>
-            </div>
-          </div>
+    <footer class="footer dark-mode bg-secondary pt-5 pb-4 pb-lg-5">
+      <div class="container text-center pt-lg-3">
+        <div
+          class="navbar-brand flex-column justify-content-center text-dark mb-1 mb-lg-3"
+        >
+          <img
+            src="assets/img/logo_2.svg"
+            class="me-2"
+            width="60"
+            alt="Silicon"
+          />
+          <span class="fs-4">Motif Di Don</span>
         </div>
-        <p class="fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
-          &copy; All rights reserved. Made by
+        <ul class="nav justify-content-center pt-3 pb-1 pb-lg-1">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Speakers</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Schedule</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Sponsors</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Prices</a></li>
+        </ul>
+        <p class="fs-sm text-center pt-1 mt-lg-1 mb-0">
+          <span class="text-light opacity-50"
+            >&copy; All rights reserved. Made by
+          </span>
           <a
             class="nav-link d-inline-block p-0"
-            href="https://createx.studio/"
+            href="https://code.maxthestranger.com/"
             target="_blank"
             rel="noopener"
-            >Createx Studio</a
+            >Max The Stranger</a
           >
         </p>
       </div>
