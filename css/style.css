@@ -173,6 +173,16 @@ p {
   border-bottom: 1px solid var(--grey);
 }
 
+.p_0{
+  padding: 0 !important;
+}
+
+.d_flex_end{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 /* ===========
     INFO BAR
 ================ */
@@ -503,9 +513,7 @@ header {
     INFO BAR
 ================ */
   .info_bar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    display: block;
   }
 
   .info_bar ul {
