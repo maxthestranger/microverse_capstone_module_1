@@ -5,7 +5,6 @@
   src: url('../fonts/Cocogoose.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 :root {
@@ -176,20 +175,31 @@ p {
 
 /* ===========
     INFO BAR
-================*/
+================ */
 .info_bar {
   display: none;
 }
 
 /* ===========
     HEADER
-================*/
+================ */
 header {
   background: transparent;
 }
 
 .logo {
   display: none;
+}
+
+/* contact */
+.contact {
+  margin-top: 20px;
+}
+
+.contact span {
+  display: block;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .hamburger {
@@ -243,7 +253,6 @@ header {
 
 .navbar.open {
   display: block;
-  display: block;
   position: absolute;
   background: white;
   width: 100%;
@@ -277,7 +286,7 @@ header {
 
 /* ===========
     HERO
-================*/
+================ */
 .qouted {
   color: var(--primary);
   font-weight: normal;
@@ -305,8 +314,55 @@ header {
 }
 
 /* ===========
+    PARTNER
+================ */
+.partner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.partner_img img {
+  filter: invert(100%);
+}
+
+/* ===========
+    FOOTER
+================ */
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer_logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer_logo img {
+  width: 200px;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.logo_desc {
+  border: 1px solid var(--secondary);
+  padding: 40px;
+}
+
+.logo_desc img {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ===========
     PROGRAM
-================*/
+================ */
 .program {
   display: flex;
   flex-direction: column;
@@ -361,7 +417,7 @@ header {
 
 /* ===========
     INSTRUCTORS
-================*/
+================ */
 .grid {
   display: grid;
   gap: 50px;
@@ -390,54 +446,8 @@ header {
 }
 
 /* ===========
-    PARTNER
-================*/
-.partner {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.partner_img img {
-  filter: invert(100%);
-}
-
-/* ===========
-    FOOTER
-================*/
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.footer_logo {
-  display: flex;
-  align-items: center;
-}
-
-.footer_logo img {
-  width: 200px;
-}
-
-.copyright {
-  font-size: 14px;
-}
-
-/* ===========
     ABOUT US
-================*/
-.contact {
-  margin-top: 20px;
-}
-
-.contact span {
-  display: block;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
+================ */
 .history {
   display: flex;
   flex-direction: column;
@@ -472,26 +482,26 @@ header {
   color: var(--white);
 }
 
-.logo_desc {
-  border: 1px solid var(--secondary);
-  padding: 40px;
-}
-
-.logo_desc img {
-  width: 500px;
-  margin: 0 auto;
-  display: block;
-}
-
-/* desktop */
+/* =============================================
+                    DESKTOP
+================================================== */
 @media (min-width: 768px) {
   .d_lg_none {
     display: none;
   }
 
+  .navbar ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .navbar ul a {
+    border-bottom: 1px dashed transparent;
+  }
+
   /* ===========
     INFO BAR
-================*/
+================ */
   .info_bar {
     display: flex;
     align-items: center;
@@ -516,10 +526,10 @@ header {
 
   /* ===========
     HEADER
-================*/
+================ */
   header {
     background: var(--white);
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   header .container {
@@ -549,15 +559,6 @@ header {
     margin: 0;
   }
 
-  .navbar ul {
-    display: flex;
-    gap: 10px;
-  }
-
-  .navbar ul a {
-    border-bottom: 1px dashed transparent;
-  }
-
   .navbar ul a:hover {
     background: transparent;
     color: var(--primary);
@@ -571,7 +572,7 @@ header {
 
   /* ===========
     HERO
-================*/
+================ */
   .page_title {
     font-size: 60px;
     font-weight: bolder;
@@ -584,7 +585,7 @@ header {
 
   /* ===========
     PROGRAM
-================*/
+================ */
   .program {
     flex-direction: row;
     gap: 3px;
@@ -609,7 +610,7 @@ header {
 
   /* ===========
     INSTRUCTORS
-================*/
+================ */
   .grid {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -617,7 +618,7 @@ header {
 
   /* ===========
     FOOTER
-================*/
+================ */
   .footer .container {
     gap: 146px;
   }
@@ -632,7 +633,7 @@ header {
 
   /* ===========
     ABOUT
-================*/
+================ */
   .history {
     flex-direction: row;
     justify-content: center;
