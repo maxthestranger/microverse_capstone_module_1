@@ -153,6 +153,14 @@ p {
 .d_sm_none {
   display: none;
 }
+
+/* ===========
+    INFO BAR
+================*/
+.info_bar {
+  display: none;
+}
+
 /* ===========
     HEADER
 ================*/
@@ -215,6 +223,12 @@ header {
 
 .navbar.open {
   display: block;
+  display: block;
+  position: absolute;
+  background: white;
+  width: 100%;
+  left: 0;
+  padding: 25px;
 }
 
 .navbar ul {
@@ -396,6 +410,32 @@ header {
   .d_lg_none {
     display: none;
   }
+
+  /* ===========
+    INFO BAR
+================*/
+  .info_bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .info_bar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .info_bar ul a {
+    color: var(--white);
+    padding: 7px 14px;
+    display: block;
+  }
+
+  .info_bar ul a:hover {
+    color: var(--primary);
+  }
+
   /* ===========
     HEADER
 ================*/
