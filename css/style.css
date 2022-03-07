@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('../fonts/Cocogoose.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary: #ee523c;
+  --secondary: #d3d3d3;
+  --dark: #272a31;
+  --title_font: 'Cocogoose', sans-serif;
+  --body_font: 'Lato', sans-serif;
+}
