@@ -2,6 +2,8 @@
 
 # HTML/CSS & JavaScript capstone project - Web Development Course page
 
+![](img/demo.png)
+
 > A web app to showcase web development course with all the contents and instructors.
 
 ## Built With
@@ -11,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Web Development Course](https://livedemo.com)
+[Web Development Course](https://maxthestranger.github.io/microverse_capstone_course/)
 
 ## Getting Started
 
@@ -57,10 +59,6 @@ set up on github pages
 - Twitter: [@maxthestranger](https://twitter.com/maxthestranger)
 - LinkedIn: [Maxthestranger](https://linkedin.com/in/maxthestranger)
 
-👤 **Cindy Shin**
-
-- Behance: [@adagio07](https://www.behance.net/adagio07)
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -73,7 +71,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hats off to the UI/UX designer Cindy Shin
+- Hats off to the UI/UX designer Cindy Shin [@adagio07](https://www.behance.net/adagio07)
 
 ## 📝 License
 
