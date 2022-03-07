@@ -1,20 +1,9 @@
 import instructorData from './data.js';
 
-// hamburger
-const btn = document.querySelector('.hamburger');
-const menu = document.querySelector('.navbar');
-
-btn.addEventListener('click', () => {
-  btn.classList.toggle('active');
-  menu.classList.toggle('open');
-});
-
 // instructors
 const grid = document.querySelector('.grid');
 
-function createGridItem({
-  imgUrl, title, role, info,
-}) {
+function createGridItem({ imgUrl, title, role, info }) {
   const gridItem = document.createElement('div');
   gridItem.classList.add('grid_item');
 
@@ -36,6 +25,17 @@ function createGridItem({
   grid.appendChild(gridItem);
 }
 
-instructorData.forEach((instr) => {
-  createGridItem(instr);
+if (grid) {
+  instructorData.forEach((instr) => {
+    createGridItem(instr);
+  });
+}
+
+// hamburger
+const btn = document.querySelector('.hamburger');
+const menu = document.querySelector('.navbar');
+
+btn.addEventListener('click', () => {
+  btn.classList.toggle('active');
+  menu.classList.toggle('open');
 });
