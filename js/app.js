@@ -3,7 +3,9 @@ import instructorData from './data.js';
 // instructors
 const grid = document.querySelector('.grid');
 
-function createGridItem({ imgUrl, title, role, info }) {
+function createGridItem({
+  imgUrl, title, role, info,
+}) {
   const gridItem = document.createElement('div');
   gridItem.classList.add('grid_item');
 
