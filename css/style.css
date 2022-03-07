@@ -94,6 +94,17 @@ p {
   background: transparent;
 }
 
+.btn_dark_outline {
+  background: var(--white);
+  color: var(--dark);
+  border-color: var(--dark);
+}
+
+.btn_dark_outline:hover {
+  background: var(--dark);
+  color: var(--white);
+}
+
 .bg_grey {
   background: var(--grey);
 }
@@ -115,6 +126,14 @@ p {
   color: var(--white);
 }
 
+.text_primary {
+  color: var(--primary);
+}
+
+.italic {
+  font-style: italic;
+}
+
 .sec_title {
   text-align: center;
   margin-bottom: 50px;
@@ -128,7 +147,7 @@ p {
   height: 1px;
   background: var(--primary);
   bottom: -16px;
-  left: 47%;
+  left: calc(50% - 27px);
 }
 /* ===========
     HEADER
@@ -291,12 +310,66 @@ header {
 
 .btn_program {
   max-width: 50%;
-  display: block;
+  display: flex;
   margin: 50px auto 0;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_program i {
+  margin-left: 5px;
+}
+
+/* ===========
+    INSTRUCTORS
+================*/
+.grid {
+  display: grid;
+  gap: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.grid_item {
+  display: flex;
+  gap: 20px;
+}
+
+.styled_text {
+  margin: 10px 0 20px;
+  position: relative;
+}
+
+.styled_text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 1px;
+  width: 20%;
+  background: var(--secondary);
+}
+
+/* ===========
+    PARTNER
+================*/
+.partner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.partner_img img {
+  filter: invert(100%);
 }
 
 /* desktop */
 @media (min-width: 768px) {
+  .d_lg_none {
+    display: none;
+  }
   /* ===========
     HEADER
 ================*/
@@ -388,5 +461,13 @@ header {
 
   .pr_desc {
     text-align: center;
+  }
+
+  /* ===========
+    INSTRUCTORS
+================*/
+  .grid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
